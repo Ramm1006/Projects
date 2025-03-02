@@ -1,1 +1,41 @@
 hi hello I am nino augus
+
+give a program to print fibonacci series
+
+
+
+
+
+
+# Function to generate Fibonacci series
+def fibonacci(n):
+    a, b = 0, 1
+    print("Fibonacci series up to", n, "terms:")
+    for i in range(n):
+        print(a, end=" ")
+        a, b = b, a + b
+    print()
+
+# Function to check if a number is Armstrong
+def is_armstrong(num):
+    order = len(str(num))
+    sum = 0
+    temp = num
+    while temp > 0:
+        digit = temp % 10
+        sum += digit ** order
+        temp //= 10
+    return num == sum
+
+# Function to generate Armstrong numbers up to n
+def armstrong_series(n):
+    print("Armstrong numbers up to", n, ":")
+    for i in range(1, n + 1):
+        if is_armstrong(i):
+            print(i, end=" ")
+    print()
+
+# Test the functions
+n = 10  # You can change this value
+fibonacci(n)
+armstrong_series(1000)  # Checking Armstrong numbers up to 1000
