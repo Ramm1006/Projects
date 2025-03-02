@@ -1,4 +1,5 @@
 hi hello I am nino augus
+<<<<<<< HEAD
 
 give a program to print fibonacci series
 
@@ -39,3 +40,6 @@ def armstrong_series(n):
 n = 10  # You can change this value
 fibonacci(n)
 armstrong_series(1000)  # Checking Armstrong numbers up to 1000
+=======
+lskfhib ,kfh
+>>>>>>> 7f4f3f61fa0d5bd6de2088b51571187eecb88dbe
